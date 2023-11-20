@@ -605,7 +605,7 @@ def main():
 
     
     # Initialize and load your model using args.model_path
-    trainer = Trainer(num_features= args.code_dim+args.demo_dim,
+    trainer = Trainer(
             demo_num_features = arg.demo_num_features,
             code_dim = args.code_dim,
             demo_dim = args.demo_dim,
