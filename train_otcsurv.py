@@ -268,6 +268,7 @@ class Trainer:
 
 
         #train
+        self.model.train()
         for epoch in range(num_epochs):
 
             loss_list = []
@@ -280,9 +281,6 @@ class Trainer:
 
             cl_loss_list=[]
 
-
-
-            self.model.train()
             loop = tqdm(self.train_loader, total=len(self.train_loader), leave=False)
 
 
